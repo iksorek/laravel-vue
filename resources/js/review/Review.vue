@@ -37,7 +37,11 @@
                         <label for="content" class="text-muted">
                             Describe Your experience
                         </label>
-                        <textarea id="content" cols="30" class="form-control" v-model="review.content"></textarea>
+                        <textarea
+                                  id="content" cols="30" class="form-control" v-model="review.content">
+
+                        </textarea>
+
                     </div>
                     <button @click.prevent="submit" :disabled="loading" class="btn btn-lg btn-primary btn-block">
                         Submit
@@ -96,7 +100,8 @@ export default {
               this.error = true;
                 })
                 .then(() => this.loading = false);
-        }
+        },
+
     },
     created() {
         this.loading = true;
