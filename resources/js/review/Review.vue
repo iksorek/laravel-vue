@@ -1,6 +1,6 @@
 <template>
     <div v-if="!loading">
-  <FatalError v-if="error"></FatalError>
+        <FatalError v-if="error"></FatalError>
 
         <h3 class="text-center shadow rounded-pill mb-5">Review page</h3>
         <div class="row" v-if="!error">
@@ -27,7 +27,9 @@
             <div :class="[{'col-md-8': twoColumns},{'col-md-12': oneColumn}]">
 
 
-                <div v-if="alreadyReviewed" class="alert-danger text-center rounded">Booking has been already reviewed.</div>
+                <div v-if="alreadyReviewed" class="alert-danger text-center rounded">Booking has been already
+                    reviewed.
+                </div>
                 <div v-else>
                     <div class="form-group">
                         <label class="text-muted">Select the star rating 1 - 5 STARS</label>
@@ -38,12 +40,18 @@
                             Describe Your experience
                         </label>
                         <textarea
-                                  id="content" cols="30" class="form-control" v-model="review.content">
+                            :class="[{'is-invalid': errorFor('content')}]"
+                            id="content" cols="30"
+                            class="form-control" v-model="review.content">
 
                         </textarea>
+                        <div class="invalid-feedback"
+                             v-for="(error, index) in errorFor('content')" :key="'content' + index">
+                            {{ error }}
+                        </div>
 
                     </div>
-                    <button @click.prevent="submit" :disabled="loading" class="btn btn-lg btn-primary btn-block">
+                    <button @click.prevent="submit" :disabled="sending" class="btn btn-lg btn-primary btn-block">
                         Submit
                     </button>
                 </div>
@@ -76,30 +84,37 @@ export default {
             booking: null,
             error: false,
             errors: null,
+            sending: false,
         }
 
     },
     methods: {
+        errorFor(field) {
+            return null !== this.errors && this.errors[field]
+                ? this.errors[field]
+                : null;
+        },
         onRatingChange(rating) {
             this.review.rating = rating;
         },
         submit() {
+
             this.errors = null;
-            this.loading = true;
+            this.sending = true;
             axios.post('/api/reviews', this.review)
                 .then(response => console.log(response))
                 .catch(err => {
-                if(is422(err)){
-                    const errors = err.response.data.errors;
-                    if(errors['content'] && _.size(errors) === 1){
-                        this.errors = errors;
+                    if (is422(err)) {
+                        const errors = err.response.data.errors;
+                        if (errors['content'] && _.size(errors) === 1) {
+                            this.errors = errors;
+                        }
+                        return;
                     }
-                    return;
-                }
 
-              this.error = true;
+                    this.error = true;
                 })
-                .then(() => this.loading = false);
+                .then(() => this.sending = false);
         },
 
     },
