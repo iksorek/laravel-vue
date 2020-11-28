@@ -2,7 +2,9 @@
     <div class="text-center alert-warning rounded-lg p-3">
         <i class="far fa-thumbs-up"></i>
         <h2>Success!</h2>
-        <p>Operation was successful</p>
+        <p>
+            <slot></slot>
+        </p>
     </div>
 </template>
 
@@ -20,5 +22,4 @@ export default {
 .fa-thumbs-up {
     font-size: 10rem;
 }
-
 </style>

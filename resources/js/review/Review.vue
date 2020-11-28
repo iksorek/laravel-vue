@@ -32,7 +32,7 @@
                     reviewed.
                 </div>
                 <div v-else>
-                    <success v-if="success"></success>
+                    <success v-if="success">Review has been saved. Thank You</success>
                     <div class="form-group" v-if="!success">
                         <label class="text-muted">Select the star rating 1 - 5 STARS</label>
                         <StarRating class="fa-3x" v-model="review.rating"></StarRating>
