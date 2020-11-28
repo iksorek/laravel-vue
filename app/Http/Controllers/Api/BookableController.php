@@ -23,4 +23,5 @@ class BookableController extends Controller
         return new BookableShowResource(Bookable::findOrFail($id));
 
     }
+
 }
