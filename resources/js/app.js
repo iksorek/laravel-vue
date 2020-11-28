@@ -1,3 +1,4 @@
+
 require('./bootstrap');
 
 import router from "./routes";
@@ -5,10 +6,12 @@ import VueRouter from "vue-router";
 import Index from "./Index";
 import StarRating from "./shared/components/StarRating";
 import FatalError from "./shared/components/FatalError";
+import ValidationErrors from "./shared/components/ValidationErrors"
 window.Vue = require('vue');
 Vue.use(VueRouter);
 Vue.component('StarRating', StarRating);
 Vue.component('FatalError', FatalError);
+Vue.component('v-errors', ValidationErrors);
 
 
 
