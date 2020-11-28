@@ -45,7 +45,7 @@
                             class="form-control" v-model="review.content">
 
                         </textarea>
-                      <v-errors :errors="errorFor('content')"></v-errors>
+                        <v-errors :errors="errorFor('content')"></v-errors>
 
                     </div>
                     <button @click.prevent="submit" :disabled="sending" class="btn btn-lg btn-primary btn-block">
@@ -64,8 +64,11 @@
 
 <script>
 import {is404, is422} from "../shared/utils/response";
+import validationErrors from "../shared/mixins/validationErrors";
 
 export default {
+
+    mixins: [validationErrors],
     name: "Review",
     data() {
         return {
@@ -80,17 +83,12 @@ export default {
             loading: false,
             booking: null,
             error: false,
-            errors: null,
             sending: false,
         }
 
     },
     methods: {
-        errorFor(field) {
-            return null !== this.errors && this.errors[field]
-                ? this.errors[field]
-                : null;
-        },
+
         onRatingChange(rating) {
             this.review.rating = rating;
         },

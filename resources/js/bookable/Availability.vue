@@ -39,15 +39,17 @@
 
 <script>
 import {is422, is404} from "../shared/utils/response";
+import validationErrors from "../shared/mixins/validationErrors";
 
 export default {
+    mixins: [validationErrors],
     data() {
         return {
             from: null,
             to: null,
             loading: false,
             status: null,
-            errors: null,
+
         }
     },
     methods: {
@@ -69,9 +71,7 @@ export default {
 
 
         },
-        errorFor(field) {
-            return this.hasErrors && this.errors[field] ? this.errors[field] : null;
-        }
+
     },
     computed: {
         hasErrors() {
