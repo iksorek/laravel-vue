@@ -38959,15 +38959,6 @@ var render = function() {
             attrs: { to: { name: "home" } }
           },
           [_vm._v("MyBNB")]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          {
-            staticClass: "btn nav-button",
-            attrs: { to: { name: "bookable" } }
-          },
-          [_vm._v("SECOND")]
         )
       ],
       1

@@ -18,7 +18,6 @@ export default {
 .success {
 
 }
-
 .fa-thumbs-up {
     font-size: 10rem;
 }
