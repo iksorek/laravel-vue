@@ -32,7 +32,8 @@ class ReviewController extends Controller
             $review->bookable_id = $booking->bookable_id;
             $review->save();
 
-            return $review->makeHidden(['id', 'content', 'rating', 'bookable_id', 'booking_id'])->toArray();
+            //return $review;
+            return $review->makeHidden(['id', 'content', 'rating', 'bookable_id', 'booking_id']);
 
 
         }

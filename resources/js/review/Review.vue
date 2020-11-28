@@ -2,9 +2,10 @@
     <div v-if="!loading">
         <FatalError v-if="error"></FatalError>
 
-        <h3 class="text-center shadow rounded-pill mb-5">Review page</h3>
-        <div class="row" v-if="!error">
 
+        <h3 class="text-center shadow rounded-pill mb-5">Review page</h3>
+
+        <div class="row" v-if="!error">
             <div :class="[{'col-md-4': twoColumns},{'d-none': oneColumn}]">
                 <div class="card rounded-lg">
                     <div class="card-body">
@@ -31,15 +32,16 @@
                     reviewed.
                 </div>
                 <div v-else>
-                    <div class="form-group">
+                    <success v-if="success"></success>
+                    <div class="form-group" v-if="!success">
                         <label class="text-muted">Select the star rating 1 - 5 STARS</label>
                         <StarRating class="fa-3x" v-model="review.rating"></StarRating>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" v-if="!success">
                         <label for="content" class="text-muted">
                             Describe Your experience
                         </label>
-                        <textarea
+                        <textarea v-if="!success"
                             :class="[{'is-invalid': errorFor('content')}]"
                             id="content" cols="30"
                             class="form-control" v-model="review.content">
@@ -48,7 +50,7 @@
                         <v-errors :errors="errorFor('content')"></v-errors>
 
                     </div>
-                    <button @click.prevent="submit" :disabled="sending" class="btn btn-lg btn-primary btn-block">
+                    <button v-if="!success" @click.prevent="submit" :disabled="sending" class="btn btn-lg btn-primary btn-block">
                         Submit
                     </button>
                 </div>
@@ -84,6 +86,7 @@ export default {
             booking: null,
             error: false,
             sending: false,
+            success: false,
         }
 
     },
@@ -96,8 +99,12 @@ export default {
 
             this.errors = null;
             this.sending = true;
+            this.success = false;
             axios.post('/api/reviews', this.review)
-                .then(response => console.log(response))
+                .then(response => {
+                    this.success = response.status === 201;
+
+                })
                 .catch(err => {
                     if (is422(err)) {
                         const errors = err.response.data.errors;
