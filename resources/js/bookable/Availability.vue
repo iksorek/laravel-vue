@@ -33,11 +33,14 @@
                        :class="[{'is-invalid': this.errorFor('to')}]">
                 <transition>
                     <v-errors v-if="errorFor('to')" :errors="errorFor('to')"></v-errors>
+
                 </transition>
             </div>
 
         </div>
         <submit-button :loading="loading" :check="check">Check</submit-button>
+
+
 
     </div>
 

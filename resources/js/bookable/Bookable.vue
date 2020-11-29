@@ -12,7 +12,10 @@
             <ReviewList></ReviewList>
         </div>
         <div class="col-md-4">
-            <Availability @availability="checkPrice($event)"></Availability>
+            <Availability @availability="checkPrice($event)" class="mb-3"></Availability>
+            <transition>
+                <button v-if="price" class="btn btn-outline-secondary btn-block">Book now!</button>
+            </transition>
         </div>
 
 
@@ -32,6 +35,7 @@ export default {
         return {
             loading: false,
             bookable: null,
+            price: null,
 
 
         }
@@ -50,8 +54,21 @@ export default {
             });
     },
     methods: {
-        checkPrice(hasAvailability){
-            console.log(hasAvailability);
+
+        async checkPrice(hasAvailability) {
+            if (!hasAvailability) {
+                this.price = null;
+                return;
+            }
+            try {
+                const bookableId = this.$route.params.id;
+                this.price = (await axios.get(
+                    `/api/bookables/${bookableId}/price?from=${this.$store.state.lastSearch.from}&to=${this.$store.state.lastSearch.to}`)).data;
+
+            } catch (err) {
+                this.price = null;
+
+            }
         }
     }
 }
