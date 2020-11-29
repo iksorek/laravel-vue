@@ -16,7 +16,7 @@ class CreateBookablesTable extends Migration
         Schema::create('bookables', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-
+            $table->unsignedInteger('price')->default(1);
             $table->string('title');
             $table->text('description')->nullable();
 

@@ -59,25 +59,25 @@ export default {
         }
     },
     methods: {
-        check() {
+        async check() {
+            this.loading = true;
+            this.errors = null;
             this.$store.commit('setLastSearch', {
                 from: this.from,
                 to: this.to
             });
-            this.loading = true;
-            this.errors = null,
-                axios.get(`/api/bookables/${this.$route.params.id}/availability?from=${this.from}&to=${this.to}`)
-                    .then(response => {
-                        this.status = response.status;
-                        this.loading = false;
-                    })
-                    .catch(error => {
-                        if (is422(error)) {
-                            this.errors = error.response.data.errors;
-                        }
-                        this.status = error.response.status;
-                        this.loading = false;
-                    });
+            try {
+                this.status = (await axios.get(`/api/bookables/${this.$route.params.id}/availability?from=${this.from}&to=${this.to}`)).status;
+                this.$emit("availability", this.hasAvailability);
+            } catch (error) {
+                if (is422(error)) {
+                    this.errors = error.response.data.errors;
+                }
+                this.status = error.response.status
+                this.$emit("availability", this.hasAvailability);
+
+            }
+            this.loading = false;
 
 
         },

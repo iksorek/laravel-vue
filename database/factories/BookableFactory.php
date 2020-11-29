@@ -25,6 +25,7 @@ class BookableFactory extends Factory
         return [
             'title' => $this->faker->colorName .' ' . $this->faker->words(2, true),
             'description' => $this->faker->words(150, true),
+            'price'=>random_int(20,500),
 
         ];
     }
