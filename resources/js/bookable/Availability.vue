@@ -2,8 +2,10 @@
     <div class="bg-white p-2 border mt-1">
         <h6 class="text-secondary font-weight-bolder">
             Check Availability
-            <p v-if="noAvailability" class="text-danger">No availability in selected dates</p>
-            <p v-if="hasAvailability" class="text-success">Selected dates are available</p>
+            <transition>
+                <p v-if="noAvailability" class="text-danger">No availability in selected dates</p>
+                <p v-if="hasAvailability" class="text-success">Selected dates are available</p>
+            </transition>
         </h6>
 
         <div class="form-row">
@@ -15,7 +17,10 @@
                        class="form-control
                form-control-sm" placeholder="Start date"
                        :class="[{'is-invalid': this.errorFor('from')}]">
-                <v-errors :errors="errorFor('from')"></v-errors>
+                <transition>
+                    <v-errors v-if="errorFor('from')" :errors="errorFor('from')"></v-errors>
+                </transition>
+
             </div>
 
             <div class="from-group col-md-6">
@@ -26,16 +31,17 @@
                        @keyup.enter="check"
                        placeholder="End date"
                        :class="[{'is-invalid': this.errorFor('to')}]">
-
-                <v-errors :errors="errorFor('to')"></v-errors>
+                <transition>
+                    <v-errors v-if="errorFor('to')" :errors="errorFor('to')"></v-errors>
+                </transition>
             </div>
 
         </div>
-        <button @click="check" :disabled="loading" class="btn btn-secondary btn-block mt-4">Check</button>
+        <submit-button :loading="loading" :check="check">Check</submit-button>
+
     </div>
 
 </template>
-
 
 <script>
 import {is422, is404} from "../shared/utils/response";
@@ -45,8 +51,8 @@ export default {
     mixins: [validationErrors],
     data() {
         return {
-            from: null,
-            to: null,
+            from: this.$store.state.lastSearch.from,
+            to: this.$store.state.lastSearch.to,
             loading: false,
             status: null,
 
@@ -54,6 +60,10 @@ export default {
     },
     methods: {
         check() {
+            this.$store.commit('setLastSearch', {
+                from: this.from,
+                to: this.to
+            });
             this.loading = true;
             this.errors = null,
                 axios.get(`/api/bookables/${this.$route.params.id}/availability?from=${this.from}&to=${this.to}`)
