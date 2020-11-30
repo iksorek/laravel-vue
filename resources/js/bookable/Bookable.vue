@@ -14,6 +14,9 @@
         <div class="col-md-4">
             <Availability @availability="checkPrice($event)" class="mb-3"></Availability>
             <transition name="fadeSlow">
+                <PriceBreakdown v-if="price" :price="price"></PriceBreakdown>
+            </transition>
+            <transition name="fadeSlow">
                 <button v-if="price" class="btn btn-outline-secondary btn-block">Book now!</button>
             </transition>
         </div>
@@ -26,11 +29,13 @@
 <script>
 import Availability from "./Availability";
 import ReviewList from "./ReviewList";
+import PriceBreakdown from "./PriceBreakdown";
 
 export default {
     components: {
         Availability,
         ReviewList,
+        PriceBreakdown,
     },
     data() {
         return {

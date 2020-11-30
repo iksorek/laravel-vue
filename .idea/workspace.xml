@@ -27,11 +27,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BookablePriceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BookablePriceController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bookable/Availability.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookable/Availability.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/bookable/Bookable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookable/Bookable.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/bookable/PriceBreakdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookable/PriceBreakdown.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/myown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/myown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +235,7 @@
       <workItem from="1606299450469" duration="1911000" />
       <workItem from="1606472272484" duration="25676000" />
       <workItem from="1606683912016" duration="2914000" />
-      <workItem from="1606769595555" duration="1080000" />
+      <workItem from="1606769595555" duration="4225000" />
     </task>
     <task id="LOCAL-00001" summary="availability in progress">
       <created>1605049826420</created>
@@ -368,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606686797934</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Minor fixes">
+      <created>1606770916089</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1606770916089</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +428,8 @@
     <MESSAGE value="ADD Transitions&#10;Check Button set as component" />
     <MESSAGE value="Availability code reformatted" />
     <MESSAGE value="ADD Price axios and Book now button. &#10;Ready to finish price breakdown component" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD Price axios and Book now button. &#10;Ready to finish price breakdown component" />
+    <MESSAGE value="Minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1515" y="153" width="800" height="684" key="#Deployment" timestamp="1605480895034">
@@ -462,10 +472,10 @@
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>
     <state x="1647" y="324" width="535" height="342" key="SimpleOpenTaskDialog/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606683977010" />
-    <state x="1515" y="228" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606686801581">
+    <state x="1515" y="228" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606771099021">
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>
-    <state x="1515" y="228" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606686801581" />
+    <state x="1515" y="228" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606771099021" />
     <state x="1692" y="381" width="445" height="228" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606566172882">
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>
