@@ -13,7 +13,7 @@
         </div>
         <div class="col-md-4">
             <Availability @availability="checkPrice($event)" class="mb-3"></Availability>
-            <transition>
+            <transition name="fadeSlow">
                 <button v-if="price" class="btn btn-outline-secondary btn-block">Book now!</button>
             </transition>
         </div>
@@ -22,6 +22,7 @@
     </div>
     <div v-else>Data is loading...</div>
 </template>
+
 <script>
 import Availability from "./Availability";
 import ReviewList from "./ReviewList";
@@ -75,3 +76,13 @@ export default {
 
 
 </script>
+<style scoped>
+
+.fadeSlow-enter-active, .fadeSLow-leave-active {
+    transition: opacity .9s;
+}
+
+.fadeSlow-enter, .fadeSlow-leave-to {
+    opacity: 0;
+}
+</style>
