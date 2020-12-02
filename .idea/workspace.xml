@@ -25,11 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bookable/Bookable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookable/Bookable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store.js" afterDir="false" />
-    </list>
+    <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="" />
     <list id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -56,6 +52,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="iksor &lt;iksorek@gmail.com&gt;" />
         <option value="iksor" />
       </list>
     </option>
@@ -65,33 +62,10 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="fb08c9c8-616a-434f-a2b5-10cf657e9f44" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="27" end1="28" start2="27" end2="28" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="29" end1="33" start2="29" end2="29" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="34" end1="35" start2="30" end2="30" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="36" end1="36" start2="31" end2="34" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="65" end1="66" start2="63" end2="64" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="73" end1="73" start2="71" end2="94" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="186" end1="186" start2="207" end2="210" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="202" end1="202" start2="226" end2="227" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="222" end1="223" start2="247" end2="249" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="227" end1="228" start2="253" end2="254" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="237" end1="238" start2="263" end2="265" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="379" end1="380" start2="406" end2="433" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="431" end1="432" start2="484" end2="487" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="470" end1="471" start2="525" end2="526" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
-        <range start1="473" end1="475" start2="528" end2="530" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="477" end1="478" start2="532" end2="533" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="486" end1="486" start2="541" end2="545" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
-        <range start1="494" end1="505" start2="553" end2="553" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
-      </ranges>
-    </file>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -420,7 +394,7 @@
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
       <updated>1606912221292</updated>
-      <workItem from="1606912221938" duration="10278000" />
+      <workItem from="1606912221938" duration="10646000" />
     </task>
     <task id="LOCAL-00024" summary="Half-way to get basket done">
       <created>1606945055653</created>
@@ -429,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606945055653</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="ADD: Adding adn removing to/from basket in VUEX state and local storage">
+      <created>1606946083723</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1606946083723</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
     <servers />
@@ -485,7 +466,9 @@
     <MESSAGE value="Minor fixes" />
     <MESSAGE value="Add few animations and localstorage for searched dates" />
     <MESSAGE value="Half-way to get basket done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Half-way to get basket done" />
+    <MESSAGE value="ADD: Adding adn removing to/from basket in VUEX state and local storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: Adding adn removing to/from basket in VUEX state and local storage" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1515" y="153" width="800" height="684" key="#Deployment" timestamp="1605480895034">
