@@ -1,21 +1,35 @@
 <template>
-<div>
-    <nav class="navbar bg-light border-bottom navbar-light">
-        <router-link class="navbar-brand mr-auto" :to="{name: 'home'}">MyBNB</router-link>
+    <div>
+        <nav class="navbar bg-light border-bottom navbar-light">
+            <router-link class="navbar-brand mr-auto" :to="{name: 'home'}">MyBNB</router-link>
+            <router-link class="btn nav-button" :to="{name: 'home'}">
+                Basket
+                <span v-if="itemsInBasket" class="badge badge-secondary">{{ itemsInBasket }}</span>
+            </router-link>
 
-</nav>
-<div class="container m-4 p-4">
-    <router-view/>
-</div>
+        </nav>
+        <div class="container m-4 p-4">
+            <router-view/>
+        </div>
 
-</div>
+    </div>
 </template>
 
 <script>
-import ExampleComponent from "./components/ExampleComponent";
+
+import {mapState, mapGetters} from "vuex";
+
 export default {
- components: {
-     ExampleComponent,
- }
+
+
+    computed: {
+
+        ...mapState({
+            lastSearchComputed: "lastSearch",
+        }),
+        ...mapGetters({
+            itemsInBasket: 'itemsInBasket',
+        }),
+    }
 }
 </script>

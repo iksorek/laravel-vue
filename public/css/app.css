@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);.card:hover{box-shadow:2px 2px 2px grey}.card{transition:box-shadow .3s}.fade-enter-active,.fade-leave-active{transition:opacity .5s}.fade-enter,.fade-leave-to{opacity:0}.v-enter-active,.v-leave-active{transition:opacity .5s}.v-enter,.v-leave-to{opacity:0}@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);.card:hover{box-shadow:2px 2px 2px grey}.card{transition:box-shadow .3s}.card-title{transition:text-shadow .4s;text-shadow:1px 1px 2px #00f}.card-title:hover{text-shadow:1px 1px 5px #00f;text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .5s}.fade-enter,.fade-leave-to{opacity:0}.v-enter-active,.v-leave-active{transition:opacity .5s}.v-enter,.v-leave-to{opacity:0}@charset "UTF-8";
 
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com

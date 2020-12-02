@@ -5,6 +5,14 @@
 .card {
     transition: box-shadow .3s;
 }
+.card-title{
+    transition: text-shadow .4s;
+    text-shadow: 1px 1px 2px blue;
+}
+.card-title:hover{
+    text-shadow: 1px 1px 5px blue;
+    text-decoration: none;
+}
 
 .fade-enter-active, .fade-leave-active {
     transition: opacity .5s;

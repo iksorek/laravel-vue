@@ -17,8 +17,23 @@
                 <PriceBreakdown v-if="price" :price="price"></PriceBreakdown>
             </transition>
             <transition name="fadeSlow">
-                <button v-if="price" class="btn btn-outline-secondary btn-block">Book now!</button>
+                <button v-if="price"
+                        :disabled="inBasketAlready"
+                        class="btn btn-outline-secondary btn-block"
+                        @click="addToBasket">
+                    {{ !inBasketAlready ? 'Book now!' : 'Booked already!' }}
+                </button>
             </transition>
+            <transition name="fadeSlow">
+                <button v-if="inBasketAlready"
+                        class="btn btn-outline-secondary btn-block"
+                        @click="removeFromBasket">
+                    Remove from basket
+                </button>
+            </transition>
+            <div v-if="inBasketAlready" class="mt-4 text-center rounded-lg border p-4 alert-warning">
+                Looks like it is in Your basket already! You can not book it twice!
+            </div>
         </div>
 
 
@@ -30,6 +45,7 @@
 import Availability from "./Availability";
 import ReviewList from "./ReviewList";
 import PriceBreakdown from "./PriceBreakdown";
+import {mapState} from "vuex";
 
 export default {
     components: {
@@ -75,8 +91,35 @@ export default {
                 this.price = null;
 
             }
+        },
+        addToBasket() {
+
+
+            this.$store.commit('addToBasket', {
+                bookable: this.bookable,
+                price: this.price,
+                dates: this.lastSearch,
+            });
+        },
+        removeFromBasket() {
+            this.$store.commit("removeFromBasket", this.bookable.id)
         }
-    }
+    },
+    computed: {
+        ...mapState({
+            lastSearch: "lastSearch",
+
+        }),
+        inBasketAlready() {
+            if (null === this.bookable) {
+                return false;
+            }
+            return this.$store.getters.inBasketAlready(this.bookable.id);
+
+        }
+    },
+
+
 }
 
 

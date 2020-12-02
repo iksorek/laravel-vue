@@ -1,15 +1,13 @@
 <template>
     <div class="col-md-3 d-flex align-items-stretch">
         <div class="card mt-3 w-100">
-            <div class="card-body bg-dark text-light">
+
+            <div class="card-text p-4">
                 <router-link :to="{ name: 'bookable', params: { id: bookable.id }}">
                     <h5 class="card-title">{{ bookable.title }}</h5>
                 </router-link>
-
-            </div>
-            <div class="card-text p-4">
                 <p>{{ bookable.description }}</p>
-                <p v-if="bookable.price">{{ bookable.price }}</p>
+                <p v-if="bookable.price">$ {{ bookable.price }} per night</p>
                 <p v-else>call for price</p>
             </div>
 
