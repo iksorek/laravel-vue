@@ -43,34 +43,6 @@ export default {
                 this.loading = false;
             });
 
-
-        // setTimeout(() => {
-        //     this.bookables = [{
-        //         id: 1,
-        //         title: 'Cheap Villa2',
-        //         content: 'Cheap Villa2 description',
-        //         price: Math.floor(Math.random() * 100),
-        //     },
-        //         {
-        //             id: 2,
-        //             title: 'Cheap Villa22',
-        //             content: 'Cheap Villaesd2 description',
-        //             price: Math.floor(Math.random() * 100),
-        //         },
-        //         {
-        //             id: 24,
-        //             title: 'Cheap Villa22',
-        //             content: 'Cheap Villaesd2 description',
-        //             price: Math.floor(Math.random() * 100),
-        //         },
-        //         {
-        //             id: 23,
-        //             title: 'Cheap Villa22',
-        //             content: 'Cheap Villaesd2 description',
-        //             price: Math.floor(Math.random() * 100),
-        //         }];
-        //     this.loading = false;
-        // }, 2000);
     }
 
 }

@@ -25,7 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="" />
+    <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/basket/Basket.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bookables/BookableListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookables/BookableListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bookables/Bookables.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookables/Bookables.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes.js" afterDir="false" />
+    </list>
     <list id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -66,6 +74,23 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="fb08c9c8-616a-434f-a2b5-10cf657e9f44" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="27" end1="28" start2="27" end2="37" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="69" end1="69" start2="78" end2="95" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="396" end1="397" start2="422" end2="423" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="412" end1="413" start2="438" end2="446" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="469" end1="470" start2="502" end2="504" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="509" end1="510" start2="543" end2="544" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="513" end1="514" start2="547" end2="548" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="516" end1="517" start2="550" end2="551" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="525" end1="526" start2="559" end2="560" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="528" end1="529" start2="562" end2="567" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="533" end1="544" start2="571" end2="571" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+      </ranges>
+    </file>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -394,7 +419,7 @@
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
       <updated>1606912221292</updated>
-      <workItem from="1606912221938" duration="10646000" />
+      <workItem from="1606912221938" duration="14784000" />
     </task>
     <task id="LOCAL-00024" summary="Half-way to get basket done">
       <created>1606945055653</created>
@@ -410,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606946083723</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ADD: Adding adn removing to/from basket in VUEX state and local storage(PROD)">
+      <created>1606946253584</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606946253584</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
     <servers />
@@ -467,7 +499,8 @@
     <MESSAGE value="Add few animations and localstorage for searched dates" />
     <MESSAGE value="Half-way to get basket done" />
     <MESSAGE value="ADD: Adding adn removing to/from basket in VUEX state and local storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD: Adding adn removing to/from basket in VUEX state and local storage" />
+    <MESSAGE value="ADD: Adding adn removing to/from basket in VUEX state and local storage(PROD)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: Adding adn removing to/from basket in VUEX state and local storage(PROD)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -507,14 +540,14 @@
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>
     <state x="1437" y="247" width="1022" height="737" key="SettingsEditor/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606683885651" />
-    <state x="1647" y="324" width="535" height="342" key="SimpleOpenTaskDialog" timestamp="1606683977010">
+    <state x="1647" y="324" width="535" height="342" key="SimpleOpenTaskDialog" timestamp="1606912221386">
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>
     <state x="1647" y="324" width="535" height="342" key="SimpleOpenTaskDialog/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606912221386" />
-    <state x="1515" y="228" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606945061908">
+    <state x="1515" y="228" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1606946259819">
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>
-    <state x="1515" y="228" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606945061908" />
+    <state x="1515" y="228" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606946259819" />
     <state x="1692" y="381" width="445" height="228" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606566172882">
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>
@@ -523,10 +556,14 @@
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>
     <state x="1584" y="221" key="run.anything.popup/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1605367247004" />
-    <state x="1583" y="215" width="672" height="678" key="search.everywhere.popup" timestamp="1606679550278">
+    <state x="1715" y="353" width="400" height="284" key="scopes" timestamp="1606913161919">
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>
-    <state x="1583" y="215" width="672" height="678" key="search.everywhere.popup/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606679550278" />
+    <state x="1715" y="353" width="400" height="284" key="scopes/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606913161919" />
+    <state x="1583" y="215" width="672" height="678" key="search.everywhere.popup" timestamp="1606951760818">
+      <screen x="1280" y="0" width="1280" height="1024" />
+    </state>
+    <state x="1583" y="215" width="672" height="678" key="search.everywhere.popup/0.27.1280.957/1280.0.1280.1024@1280.0.1280.1024" timestamp="1606951760818" />
     <state x="1645" y="323" width="540" height="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606300383736">
       <screen x="1280" y="0" width="1280" height="1024" />
     </state>

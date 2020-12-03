@@ -6,7 +6,7 @@
                 <router-link :to="{ name: 'bookable', params: { id: bookable.id }}">
                     <h5 class="card-title">{{ bookable.title }}</h5>
                 </router-link>
-                <p>{{ bookable.description }}</p>
+                <p>{{ bookable.description | truncate(20) }}</p>
                 <p v-if="bookable.price">$ {{ bookable.price }} per night</p>
                 <p v-else>call for price</p>
             </div>
@@ -21,6 +21,14 @@ export default {
     props: {
         'bookable': Object,
     },
+    filters: {
+        truncate: function (value) {
+            if (value && value.length > 20) {
+                value = value.substring(0, 170) + '...';
+            }
+            return value
+        }
+    }
 
 
 }
