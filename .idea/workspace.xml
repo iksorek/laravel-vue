@@ -26,13 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/basket/Basket.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bookables/BookableListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookables/BookableListItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bookables/Bookables.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookables/Bookables.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/basket/Basket.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/basket/Basket.vue" afterDir="false" />
     </list>
     <list id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -78,17 +75,14 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="27" end1="28" start2="27" end2="37" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="69" end1="69" start2="78" end2="95" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="396" end1="397" start2="422" end2="423" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="412" end1="413" start2="438" end2="446" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="469" end1="470" start2="502" end2="504" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="509" end1="510" start2="543" end2="544" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="513" end1="514" start2="547" end2="548" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="516" end1="517" start2="550" end2="551" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="525" end1="526" start2="559" end2="560" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="528" end1="529" start2="562" end2="567" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="533" end1="544" start2="571" end2="571" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="28" end1="29" start2="28" end2="28" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="30" end1="30" start2="29" end2="30" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="31" end1="35" start2="31" end2="32" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="80" end1="91" start2="77" end2="85" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="421" end1="422" start2="415" end2="418" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="444" end1="445" start2="440" end2="448" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="502" end1="503" start2="505" end2="507" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="504" end1="581" start2="508" end2="508" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
       </ranges>
     </file>
   </component>
@@ -419,7 +413,9 @@
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
       <updated>1606912221292</updated>
-      <workItem from="1606912221938" duration="14784000" />
+      <workItem from="1606912221938" duration="14830000" />
+      <workItem from="1607356530619" duration="45000" />
+      <workItem from="1607356587876" duration="3708000" />
     </task>
     <task id="LOCAL-00024" summary="Half-way to get basket done">
       <created>1606945055653</created>
