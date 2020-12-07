@@ -27,7 +27,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="">
       <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CheckoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BookableAvailabilityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BookableAvailabilityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Address.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Booking.php" afterDir="false" />
@@ -73,21 +72,6 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="fb08c9c8-616a-434f-a2b5-10cf657e9f44" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="28" end1="28" start2="28" end2="29" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="29" end1="30" start2="30" end2="34" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="75" end1="81" start2="79" end2="88" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="403" end1="404" start2="410" end2="411" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="410" end1="411" start2="417" end2="418" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="413" end1="414" start2="420" end2="421" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="457" end1="460" start2="464" end2="484" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="518" end1="519" start2="542" end2="544" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="521" end1="598" start2="546" end2="546" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
-      </ranges>
-    </file>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -478,9 +462,16 @@
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
       <updated>1607374854328</updated>
-      <workItem from="1607374854948" duration="4721000" />
+      <workItem from="1607374854948" duration="5269000" />
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="ADD Validation&#10;ADD Storing booking in database">
+      <created>1607380850243</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1607380850243</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -541,7 +532,8 @@
     <MESSAGE value="ADD transitions in the basket&#10;ADD Form in checkout" />
     <MESSAGE value="Database Refactored, Address and price Added and updated booking factory" />
     <MESSAGE value="Change README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change README.md" />
+    <MESSAGE value="ADD Validation&#10;ADD Storing booking in database" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD Validation&#10;ADD Storing booking in database" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
