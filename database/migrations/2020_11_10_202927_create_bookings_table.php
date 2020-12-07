@@ -20,6 +20,8 @@ class CreateBookingsTable extends Migration
             $table->date('to');
             $table->foreignId('bookable_id')->constrained();
             $table->uuid('review_key');
+            $table->unsignedInteger('price')->nullable();
+            $table->foreignId('address_id')->constrained()->index();
         });
     }
 

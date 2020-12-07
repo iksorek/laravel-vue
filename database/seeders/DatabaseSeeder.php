@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Address;
 use App\Models\Bookable;
 use App\Models\Booking;
 use App\Models\Review;
@@ -18,10 +19,12 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         Bookable::factory()->count(100)->create();
+        Address::factory()->count(200)->create();
         Booking::factory()->count(500)->create();
+
         Bookable::all()->each(function (Bookable $bookable){
-           $reviews = Review::factory()->count(rand(5,30))->make();
-           $bookable->reviews()->saveMany($reviews);
+            $reviews = Review::factory()->count(rand(5,30))->make();
+            $bookable->reviews()->saveMany($reviews);
         });
 
     }

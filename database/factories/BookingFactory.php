@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Address;
 use App\Models\Bookable;
 use App\Models\Booking;
 use Carbon\Carbon;
@@ -29,7 +30,9 @@ class BookingFactory extends Factory
         return [
             'from' => $from,
             'to' => $to,
-            'bookable_id'=> Bookable::all()->random()->id,
+            'price' => random_int(200, 5000),
+            'bookable_id' => Bookable::all()->random()->id,
+            'address_id' => Address::all()->random()->id,
 
         ];
     }
