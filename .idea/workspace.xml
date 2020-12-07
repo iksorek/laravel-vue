@@ -26,13 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/Address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/AddressFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_12_000000_create_addresses_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BookingFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BookingFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_10_202927_create_bookings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_10_202927_create_bookings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -78,13 +73,12 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="28" end1="28" start2="28" end2="31" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="29" end1="32" start2="32" end2="35" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="77" end1="85" start2="80" end2="87" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="417" end1="418" start2="419" end2="420" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="440" end1="441" start2="442" end2="457" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="498" end1="499" start2="514" end2="517" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="500" end1="577" start2="518" end2="518" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="31" end1="32" start2="31" end2="31" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="76" end1="89" start2="75" end2="75" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="419" end1="420" start2="405" end2="406" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="456" end1="457" start2="442" end2="450" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="516" end1="517" start2="509" end2="511" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="518" end1="595" start2="512" end2="512" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
       </ranges>
     </file>
   </component>
@@ -417,7 +411,7 @@
       <updated>1606912221292</updated>
       <workItem from="1606912221938" duration="14830000" />
       <workItem from="1607356530619" duration="45000" />
-      <workItem from="1607356587876" duration="7078000" />
+      <workItem from="1607356587876" duration="7823000" />
     </task>
     <task id="LOCAL-00024" summary="Half-way to get basket done">
       <created>1606945055653</created>
@@ -454,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607371039574</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Database Refactored, Address and price Added and updated booking factory">
+      <created>1607374381783</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1607374381783</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
     <servers />
@@ -514,7 +515,8 @@
     <MESSAGE value="ADD: Adding adn removing to/from basket in VUEX state and local storage(PROD)" />
     <MESSAGE value="FIX: Adding adn removing to/from Basket&#10;ADD: Basket.vue" />
     <MESSAGE value="ADD transitions in the basket&#10;ADD Form in checkout" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD transitions in the basket&#10;ADD Form in checkout" />
+    <MESSAGE value="Database Refactored, Address and price Added and updated booking factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database Refactored, Address and price Added and updated booking factory" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
