@@ -26,8 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CheckoutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BookableAvailabilityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BookableAvailabilityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Booking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <list id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -73,12 +77,15 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="31" end1="32" start2="31" end2="31" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="76" end1="89" start2="75" end2="75" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="419" end1="420" start2="405" end2="406" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="456" end1="457" start2="442" end2="450" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="516" end1="517" start2="509" end2="511" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="518" end1="595" start2="512" end2="512" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="28" end1="28" start2="28" end2="29" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="29" end1="30" start2="30" end2="34" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="75" end1="81" start2="79" end2="88" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="403" end1="404" start2="410" end2="411" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="410" end1="411" start2="417" end2="418" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="413" end1="414" start2="420" end2="421" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="457" end1="460" start2="464" end2="484" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="518" end1="519" start2="542" end2="544" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="521" end1="598" start2="546" end2="546" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
       </ranges>
     </file>
   </component>
@@ -401,17 +408,17 @@
       <option name="project" value="LOCAL" />
       <updated>1606774342068</updated>
     </task>
-    <task active="true" id="LOCAL-00023" summary="Adding basket">
+    <task id="LOCAL-00023" summary="Adding basket">
       <branch name="master" repository="$PROJECT_DIR$" />
       <changelist id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="" />
       <created>1606912205096</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1606912221292</updated>
+      <updated>1607374854328</updated>
       <workItem from="1606912221938" duration="14830000" />
       <workItem from="1607356530619" duration="45000" />
-      <workItem from="1607356587876" duration="7823000" />
+      <workItem from="1607356587876" duration="8176000" />
     </task>
     <task id="LOCAL-00024" summary="Half-way to get basket done">
       <created>1606945055653</created>
@@ -455,9 +462,26 @@
       <option name="project" value="LOCAL" />
       <updated>1607374381783</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
-    <option name="createBranch" value="false" />
-    <option name="useBranch" value="true" />
+    <task id="LOCAL-00030" summary="Change README.md">
+      <created>1607374527845</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1607374527845</updated>
+    </task>
+    <task active="true" id="LOCAL-00031" summary="adding checkout">
+      <branch name="master" repository="$PROJECT_DIR$" original="true" />
+      <branch name="adding-checkout" repository="$PROJECT_DIR$" />
+      <changelist id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="" />
+      <created>1607374826515</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1607374854328</updated>
+      <workItem from="1607374854948" duration="4721000" />
+    </task>
+    <option name="localTasksCounter" value="32" />
+    <option name="createChangelist" value="false" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +540,8 @@
     <MESSAGE value="FIX: Adding adn removing to/from Basket&#10;ADD: Basket.vue" />
     <MESSAGE value="ADD transitions in the basket&#10;ADD Form in checkout" />
     <MESSAGE value="Database Refactored, Address and price Added and updated booking factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database Refactored, Address and price Added and updated booking factory" />
+    <MESSAGE value="Change README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change README.md" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
