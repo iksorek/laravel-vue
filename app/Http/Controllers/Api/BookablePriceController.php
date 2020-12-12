@@ -4,9 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Bookable;
-use App\Models\Booking;
 use Illuminate\Http\Request;
-use Illuminate\Support\Carbon;
 
 class BookablePriceController extends Controller
 {
@@ -23,14 +21,9 @@ class BookablePriceController extends Controller
             'from' => 'required|date_format:Y-m-d',
             'to' => 'required|date_format:Y-m-d|after_or_equal:from',
         ]);
-        $days = (new Carbon($data['from']))->diffInDays(new Carbon($data['to'])) +1;
-        $price =  $bookable->price * $days;
-        return response()->json([
 
-        'total'=>$price,
-            'breakdown'=> [
-                $bookable->price => $days,
-            ]
+        return response()->json([
+            'data' => $bookable->priceFor($data['from'], $data['to'])
         ]);
 
     }

@@ -26,7 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BookablePriceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BookablePriceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Bookable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bookable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
     </list>
     <list id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -68,6 +73,20 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="fb08c9c8-616a-434f-a2b5-10cf657e9f44" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="28" end1="29" start2="28" end2="34" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="71" end1="71" start2="76" end2="90" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="197" end1="197" start2="216" end2="217" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="461" end1="462" start2="481" end2="483" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="470" end1="471" start2="491" end2="513" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="508" end1="509" start2="550" end2="550" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="532" end1="533" start2="573" end2="576" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="534" end1="611" start2="577" end2="577" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+      </ranges>
+    </file>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -195,6 +214,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -459,7 +479,8 @@
       <option name="project" value="LOCAL" />
       <updated>1607374854328</updated>
       <workItem from="1607374854948" duration="5615000" />
-      <workItem from="1607785141818" duration="418000" />
+      <workItem from="1607785141818" duration="469000" />
+      <workItem from="1607785623040" duration="2118000" />
     </task>
     <task id="LOCAL-00032" summary="ADD Validation&#10;ADD Storing booking in database">
       <created>1607380850243</created>
