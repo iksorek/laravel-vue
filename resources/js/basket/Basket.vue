@@ -1,6 +1,7 @@
 <template>
     <div class="container">
-        <div class="row">
+        <success v-if="succes">Booking has benn successfully saved. Have a nice stay!</success>
+        <div class="row" v-else>
             <div class="col-md-8" v-if="!itemsInBasket">
                 <p class="text-center alert-info">There is no bookings in Your basket yet.</p>
             </div>
@@ -122,6 +123,7 @@
 <script>
 import {mapState, mapGetters} from "vuex";
 import validationErrors from "../shared/mixins/validationErrors";
+import Success from "../shared/components/Success";
 
 export default {
     name: "Basket",
@@ -141,6 +143,7 @@ export default {
 
             },
             loading: false,
+            bookingAttempted: false,
 
 
         }
@@ -149,12 +152,18 @@ export default {
         ...mapGetters(["itemsInBasket"]),
         ...mapState({
             basket: state => state.basket.items
-        })
+        }),
+        succes() {
+            return !this.loading && this.basket.length === 0 && !this.errors && this.bookingAttempted;
+        }
+
+
     },
     methods: {
         async book() {
             this.errors = null;
             this.loading = true;
+            this.bookingAttempted = false;
             try {
                 await axios.post("/api/checkout", {
                     bookings: this.basket.map(basketItem => ({
@@ -174,6 +183,7 @@ export default {
 
 
             this.loading = false;
+            this.bookingAttempted = true;
 
         },
     },
