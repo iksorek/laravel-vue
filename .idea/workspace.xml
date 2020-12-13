@@ -29,8 +29,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/basket/Basket.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/basket/Basket.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bookable/PriceBreakdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookable/PriceBreakdown.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store.js" afterDir="false" />
     </list>
     <list id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -76,15 +74,14 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="29" end1="33" start2="29" end2="29" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="34" end1="34" start2="30" end2="33" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="79" end1="87" start2="78" end2="87" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="482" end1="483" start2="482" end2="484" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="491" end1="492" start2="492" end2="521" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="500" end1="500" start2="529" end2="539" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="529" end1="531" start2="568" end2="568" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="553" end1="554" start2="590" end2="594" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="555" end1="632" start2="595" end2="595" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="29" end1="29" start2="29" end2="30" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="31" end1="33" start2="32" end2="32" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="78" end1="87" start2="77" end2="85" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="484" end1="484" start2="482" end2="483" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="520" end1="521" start2="519" end2="527" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="568" end1="569" start2="574" end2="574" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="593" end1="594" start2="598" end2="600" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="596" end1="673" start2="602" end2="602" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
       </ranges>
     </file>
   </component>
@@ -482,6 +479,7 @@
       <workItem from="1607785141818" duration="469000" />
       <workItem from="1607785623040" duration="7737000" />
       <workItem from="1607796521532" duration="2491000" />
+      <workItem from="1607877733632" duration="1155000" />
     </task>
     <task id="LOCAL-00032" summary="ADD Validation&#10;ADD Storing booking in database">
       <created>1607380850243</created>
@@ -518,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607787957257</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Basket reworked. Prod version">
+      <created>1607878010960</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1607878010960</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -566,7 +571,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="REVIEW model cd" />
     <MESSAGE value="Review Code in progress" />
     <MESSAGE value="Removed stupid files&#10;No validation error displayed yet" />
     <MESSAGE value="Validation errors display&#10;not as component yet" />
@@ -591,7 +595,8 @@
     <MESSAGE value="PRODUCTION VERSION" />
     <MESSAGE value="fix workspace.xml showing in GIT" />
     <MESSAGE value="ADD price calculation&#10;Reformat some code" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD price calculation&#10;Reformat some code" />
+    <MESSAGE value="Basket reworked. Prod version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basket reworked. Prod version" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
