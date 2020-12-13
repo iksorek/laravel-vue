@@ -29,7 +29,14 @@ const app = new Vue({
     components: {
         'index': Index,
     },
-    beforeCreate() {
+    async beforeCreate() {
         this.$store.dispatch('loadStoreState');
+
+        // await axios.get('/sanctum/csrf-cookie');
+        // await axios.post("/login", {
+        //     email: 'weimann.fern@example.com',
+        //     password: 'password'
+        // });
+        // await axios.get('/user');
     }
 });

@@ -4,6 +4,7 @@ import Bookables from "./bookables/Bookables";
 import Bookable from "./bookable/Bookable";
 import Review from "./review/Review";
 import Basket from "./basket/Basket";
+import Login from "./auth/Login";
 
 
 
@@ -28,7 +29,13 @@ const routes = [
         path: "/basket",
         component: Basket,
         name: 'Basket',
-    }
+    },
+    {
+        path: "/auth/login",
+        component: Login,
+        name: 'Login',
+    },
+
 ];
 
 const router = new VueRouter({
