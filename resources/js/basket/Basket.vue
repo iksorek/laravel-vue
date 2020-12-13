@@ -1,51 +1,63 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8" v-if="!itemsInBasket">
+                <p class="text-center alert-info">There is no bookings in Your basket yet.</p>
+            </div>
+            <div class="col-md-8" v-if="itemsInBasket">
                 <div class="form-row">
                     <div class="col-md-6 form-group">
                         <label for="first_name">First names</label>
-                        <input type="text" id="first_name" class="form-control">
+                        <input type="text"
+                               :class="[{'is-invalid': this.errorFor('customer.first_names')}]"
+                               v-model="customer.first_names" id="first_name" class="form-control">
+                        <v-errors v-if="errorFor('customer.first_names')"
+                                  :errors="errorFor('customer.first_names')"></v-errors>
                     </div>
                     <div class="col-md-6 form-group">
                         <label for="last_name">Last name</label>
-                        <input type="text" id="last_name" class="form-control">
+                        <input type="text" v-model="customer.last_name" id="last_name" class="form-control">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 form-group">
                         <label for="email">E-mail address</label>
-                        <input type="text" id="email" class="form-control">
+                        <input type="text" id="email" v-model="customer.email" class="form-control">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group">
                         <label for="street">Street and number</label>
-                        <input type="text" id="street" class="form-control">
+                        <input type="text" id="street" v-model="customer.street" class="form-control">
                     </div>
                     <div class="col-md-6 form-group">
                         <label for="city">City</label>
-                        <input type="text" id="city" class="form-control">
+                        <input type="text" v-model="customer.city" id="city" class="form-control">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group">
                         <label for="country">Country</label>
-                        <input type="text" id="country" class="form-control">
+                        <input type="text" v-model="customer.country" id="country" class="form-control">
                     </div>
                     <div class="col-md-4 form-group">
                         <label for="state">State</label>
-                        <input type="text" id="state" class="form-control">
+                        <input type="text" v-model="customer.state" id="state" class="form-control">
                     </div>
                     <div class="col-md-2 form-group">
                         <label for="zip_code">Zip code</label>
-                        <input type="text" id="zip_code" class="form-control">
+                        <input type="text" v-model="customer.zip" id="zip_code" class="form-control">
                     </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-12 form-group">
-                        <button type="submit" class="btn btn-block btn-lg btn-primary">Book now!</button>
+                        <button type="submit"
+                                @click.prevent="book"
+                                :disabled="this.loading"
+                                class="btn btn-block btn-lg btn-primary">
+                            Book now!
+                        </button>
 
                     </div>
                 </div>
@@ -65,7 +77,7 @@
                         <span><router-link :to="{name: 'bookable', params: {id: item.bookable.id}}">{{
                                 item.bookable.title
                             }}</router-link><br> (${{ item.bookable.price }} per night)</span>
-                            <span>${{ item.price.total }}</span>
+                            <span>${{ item.price.data.total }}</span>
 
                         </div>
                         <div class="d-flex justify-content-between p-2">
@@ -89,15 +101,60 @@
 
 <script>
 import {mapState, mapGetters} from "vuex";
+import validationErrors from "../shared/mixins/validationErrors";
 
 export default {
     name: "Basket",
+    mixins: [validationErrors],
+
+    data() {
+        return {
+            customer: {
+                first_names: null,
+                last_name: null,
+                email: null,
+                street: null,
+                city: null,
+                country: null,
+                state: null,
+                zip: null
+
+            },
+            loading: false,
+
+        }
+    },
     computed: {
         ...mapGetters(["itemsInBasket"]),
         ...mapState({
             basket: state => state.basket.items
         })
-    }
+    },
+    methods: {
+        async book() {
+            this.loading = true;
+            try {
+                await axios.post("/api/checkout", {
+                    bookings: this.basket.map(basketItem => ({
+                        bookable_id: basketItem.bookable.id,
+                        from: basketItem.dates.from,
+                        to: basketItem.dates.to,
+
+                    })),
+                    customer: this.customer,
+
+                });
+                this.$store.dispatch("clearBasket");
+            } catch (error) {
+                this.errors = error.response && error.response.data.errors;
+
+            }
+
+
+            this.loading = false;
+
+        },
+    },
 }
 </script>
 

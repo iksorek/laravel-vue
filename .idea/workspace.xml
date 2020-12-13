@@ -27,11 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/BookablePriceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/BookablePriceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CheckoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Bookable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Bookable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/basket/Basket.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/basket/Basket.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bookable/PriceBreakdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookable/PriceBreakdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store.js" afterDir="false" />
     </list>
     <list id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -77,14 +76,15 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="28" end1="29" start2="28" end2="34" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="71" end1="71" start2="76" end2="90" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="197" end1="197" start2="216" end2="217" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="461" end1="462" start2="481" end2="483" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="470" end1="471" start2="491" end2="513" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
-        <range start1="508" end1="509" start2="550" end2="550" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
-        <range start1="532" end1="533" start2="573" end2="576" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
-        <range start1="534" end1="611" start2="577" end2="577" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
+        <range start1="29" end1="33" start2="29" end2="29" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="34" end1="34" start2="30" end2="33" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="79" end1="87" start2="78" end2="87" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="482" end1="483" start2="482" end2="484" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="491" end1="492" start2="492" end2="521" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="500" end1="500" start2="529" end2="539" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="529" end1="531" start2="568" end2="568" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="553" end1="554" start2="590" end2="594" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
+        <range start1="555" end1="632" start2="595" end2="595" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
       </ranges>
     </file>
   </component>
@@ -480,7 +480,8 @@
       <updated>1607374854328</updated>
       <workItem from="1607374854948" duration="5615000" />
       <workItem from="1607785141818" duration="469000" />
-      <workItem from="1607785623040" duration="2118000" />
+      <workItem from="1607785623040" duration="7737000" />
+      <workItem from="1607796521532" duration="2491000" />
     </task>
     <task id="LOCAL-00032" summary="ADD Validation&#10;ADD Storing booking in database">
       <created>1607380850243</created>
@@ -489,7 +490,35 @@
       <option name="project" value="LOCAL" />
       <updated>1607380850243</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="ADD Validation&#10;ADD Storing booking in database">
+      <created>1607381050383</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1607381050383</updated>
+    </task>
+    <task id="LOCAL-00034" summary="PRODUCTION VERSION">
+      <created>1607381109959</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1607381109959</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fix workspace.xml showing in GIT">
+      <created>1607785594183</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1607785594183</updated>
+    </task>
+    <task id="LOCAL-00036" summary="ADD price calculation&#10;Reformat some code">
+      <created>1607787957257</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1607787957257</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -498,6 +527,16 @@
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -527,8 +566,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="availability in progress" />
-    <MESSAGE value="REVIEW model, factory and API created" />
     <MESSAGE value="REVIEW model cd" />
     <MESSAGE value="Review Code in progress" />
     <MESSAGE value="Removed stupid files&#10;No validation error displayed yet" />
@@ -551,7 +588,10 @@
     <MESSAGE value="Database Refactored, Address and price Added and updated booking factory" />
     <MESSAGE value="Change README.md" />
     <MESSAGE value="ADD Validation&#10;ADD Storing booking in database" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD Validation&#10;ADD Storing booking in database" />
+    <MESSAGE value="PRODUCTION VERSION" />
+    <MESSAGE value="fix workspace.xml showing in GIT" />
+    <MESSAGE value="ADD price calculation&#10;Reformat some code" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD price calculation&#10;Reformat some code" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
