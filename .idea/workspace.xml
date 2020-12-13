@@ -25,13 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="">
+    <list default="true" id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/basket/Basket.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/basket/Basket.vue" afterDir="false" />
-    </list>
-    <list id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/shared/components/ValidationErrors.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/shared/components/ValidationErrors.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="adding-checkout" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,20 +68,6 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="fb08c9c8-616a-434f-a2b5-10cf657e9f44" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="29" end1="29" start2="29" end2="30" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="31" end1="33" start2="32" end2="32" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="78" end1="87" start2="77" end2="85" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="484" end1="484" start2="482" end2="483" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="520" end1="521" start2="519" end2="527" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="568" end1="569" start2="574" end2="574" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="593" end1="594" start2="598" end2="600" changelist="2f2e325d-7e25-4b3f-a05b-bf17710bd652" />
-        <range start1="596" end1="673" start2="602" end2="602" changelist="b5d4ca72-6d43-4245-beec-337faeb35d83" />
-      </ranges>
-    </file>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -239,13 +223,13 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <branch name="master" repository="$PROJECT_DIR$" original="true" />
       <changelist id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="" />
       <created>1604259459099</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606912221292</updated>
+      <updated>1607879623676</updated>
       <workItem from="1604259472001" duration="23040000" />
       <workItem from="1604936112247" duration="61185000" />
       <workItem from="1605707080410" duration="10065000" />
@@ -257,6 +241,7 @@
       <workItem from="1606683912016" duration="2914000" />
       <workItem from="1606769595555" duration="5292000" />
       <workItem from="1606910317426" duration="656000" />
+      <workItem from="1607879623928" duration="854000" />
     </task>
     <task id="LOCAL-00001" summary="availability in progress">
       <created>1605049826420</created>
@@ -407,7 +392,7 @@
     </task>
     <task id="LOCAL-00023" summary="Adding basket">
       <branch name="master" repository="$PROJECT_DIR$" />
-      <changelist id="2f2e325d-7e25-4b3f-a05b-bf17710bd652" name="Adding basket" comment="" />
+      <changelist id="" name="Adding basket" comment="" />
       <created>1606912205096</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
@@ -523,7 +508,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607878010960</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="ADD error handling in Basket.vue">
+      <created>1607879308854</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1607879308854</updated>
+    </task>
+    <task id="LOCAL-00039" summary="ADD error handling in Basket.vue">
+      <created>1607879705528</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1607879705528</updated>
+    </task>
+    <task id="LOCAL-00040" summary="BUG FIX">
+      <created>1607879774365</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1607879774365</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -571,8 +577,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Review Code in progress" />
-    <MESSAGE value="Removed stupid files&#10;No validation error displayed yet" />
     <MESSAGE value="Validation errors display&#10;not as component yet" />
     <MESSAGE value="Validation errors moved to separate component" />
     <MESSAGE value="Validation errors moved methods and data moved to mixins" />
@@ -596,7 +600,20 @@
     <MESSAGE value="fix workspace.xml showing in GIT" />
     <MESSAGE value="ADD price calculation&#10;Reformat some code" />
     <MESSAGE value="Basket reworked. Prod version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basket reworked. Prod version" />
+    <MESSAGE value="ADD error handling in Basket.vue" />
+    <MESSAGE value="BUG FIX" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG FIX" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/bookable/Availability.vue</url>
+          <line>116</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

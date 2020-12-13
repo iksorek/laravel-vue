@@ -12,7 +12,7 @@ export default {
     name: "ValidationErrors",
     props: ['errors'],
     methods: {
-        key(index){
+        key(index) {
             return `validation_error_${index}_${Math.random()}`;
         },
     },
