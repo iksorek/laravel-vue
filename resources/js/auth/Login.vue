@@ -8,8 +8,8 @@
                     <input type="text" id="email" name="email"
                            placeholder="Enter email"
                            v-model="email"
-                           class="form-control"
-                           :class="[{'is-invalid': errorFor('email')}]">
+                           :class="[{'is-invalid': errorFor('email')}]"
+                           class="form-control">
                     <v-errors :errors="errorFor('email')"></v-errors>
                 </div>
 
@@ -18,12 +18,13 @@
                     <input type="password" id="password" name="password"
                            placeholder="Enter your password"
                            v-model="password"
+                           :class="[{'is-invalid': errorFor('password')}]"
                            class="form-control"
-                           :class="[{'is-invalid': errorFor('password')}]">
+                    >
                     <v-errors :errors="errorFor('password')"></v-errors>
 
                 </div>
-                <button type="submit" :disabled="loding" @click.prevent="login"
+                <button type="submit" :disabled="loading" @click.prevent="login"
                         class="btn-outline-primary btn btn-block">Login
                 </button>
             </form>
@@ -45,6 +46,8 @@
 <script>
 import validationErrors from "../shared/mixins/validationErrors";
 
+import {logIn, logOut, isLoggedIn} from "../shared/utils/auth";
+
 export default {
     name: "Login",
     mixins: [validationErrors],
@@ -52,12 +55,12 @@ export default {
         return {
             email: null,
             password: null,
-            loding: false,
+            loading: false,
         }
     },
     methods: {
         async login() {
-            this.loding = true;
+            this.loading = true;
             this.errors = null;
             try {
 
@@ -66,11 +69,16 @@ export default {
                     email: this.email,
                     password: this.password
                 });
+                logIn();
+                await this.$store.dispatch("loadUser");
+                await this.$router.push({name: "home"});
+                this.loading = false;
             } catch (error) {
                 this.errors = error.response && error.response.data.errors;
-                this.loding = false;
+                this.loading = false;
             }
-            await axios.get('/user');
+            //await axios.get('/user');
+            this.loading = false;
 
 
         }
