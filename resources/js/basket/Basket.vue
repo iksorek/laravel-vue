@@ -1,21 +1,21 @@
 <template>
     <div class="container">
-        <success v-if="succes">Booking has benn successfully saved. Have a nice stay!</success>
+        <success v-if="succes">Booking has been successfully saved. Have a nice stay!</success>
         <div class="row" v-else>
             <div class="col-md-8" v-if="!itemsInBasket">
                 <p class="text-center alert-info">There is no bookings in Your basket yet.</p>
             </div>
             <div class="col-md-8" v-if="itemsInBasket">
-                <div class="form-row">
+                <div class="row">
                     <div class="col-md-6 form-group">
-                        <label for="first_name">First names</label>
+                        <label for="first_name" class="form-label">First names</label>
                         <input type="text"
-                               :class="[{'is-invalid': this.errorFor('customer.first_names')}]"
+                               :class="[{'is-invalid': this.errorFor('customer.first_names'), 'is-valid' : !this.errorFor('customer.first_names') && bookingAttempted}]"
                                v-model="customer.first_names" id="first_name" class="form-control">
                         <v-errors :errors="errorFor('customer.first_names')"></v-errors>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label for="last_name">Last name</label>
+                        <label for="last_name" class="form-label">Last name</label>
                         <input
                             :class="[{'is-invalid': this.errorFor('customer.last_name')}]"
                             type="text" v-model="customer.last_name" id="last_name" class="form-control">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 form-group">
-                        <label for="email">E-mail address</label>
+                        <label for="email" class="form-label">E-mail address</label>
                         <input
                             :class="[{'is-invalid': this.errorFor('customer.email')}]"
                             type="text" id="email" v-model="customer.email" class="form-control">
@@ -33,14 +33,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group">
-                        <label for="street">Street and number</label>
+                        <label for="street" class="form-label">Street and number</label>
                         <input
                             :class="[{'is-invalid': this.errorFor('customer.street')}]"
                             type="text" id="street" v-model="customer.street" class="form-control">
                         <v-errors :errors="errorFor('customer.street')"></v-errors>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label for="city">City</label>
+                        <label for="city" class="form-label">City</label>
                         <input
                             :class="[{'is-invalid': this.errorFor('customer.city')}]"
                             type="text" v-model="customer.city" id="city" class="form-control">
@@ -49,21 +49,21 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group">
-                        <label for="country">Country</label>
+                        <label for="country" class="form-label">Country</label>
                         <input
                             :class="[{'is-invalid': this.errorFor('customer.country')}]"
                             type="text" v-model="customer.country" id="country" class="form-control">
                         <v-errors :errors="errorFor('customer.country')"></v-errors>
                     </div>
                     <div class="col-md-4 form-group">
-                        <label for="state">State</label>
+                        <label for="state" class="form-label">State</label>
                         <input
                             :class="[{'is-invalid': this.errorFor('customer.state')}]"
                             type="text" v-model="customer.state" id="state" class="form-control">
                         <v-errors :errors="errorFor('customer.state')"></v-errors>
                     </div>
                     <div class="col-md-2 form-group">
-                        <label for="zip_code">Zip code</label>
+                        <label for="zip_code" class="form-label">Zip code</label>
                         <input
                             :class="[{'is-invalid': this.errorFor('customer.zip')}]"
                             type="text" v-model="customer.zip" id="zip_code" class="form-control">
@@ -106,7 +106,7 @@
                             <span>To: {{ item.dates.to }}</span>
 
                         </div>
-                        <div class="p-2 text-right">
+                        <div class="p-2 text-end">
                             <button
                                 @click="$store.dispatch('removeFromBasket', item.bookable.id)"
                                 class="btn btn-sm btn-outline-secondary">
@@ -197,5 +197,9 @@ h6.badge {
 
 a {
     color: black;
+}
+
+.form-label {
+    margin-top: 10px;
 }
 </style>

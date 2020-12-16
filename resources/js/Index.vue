@@ -1,13 +1,13 @@
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg bg-light border-bottom navbar-light">
-            <router-link class="navbar-brand mr-auto" :to="{name: 'home'}">MyBNB</router-link>
+        <nav class="navbar navbar-expand-lg px-5 bg-light border-bottom navbar-light d-flex justify-content-between">
+            <router-link class="navbar-brand" :to="{name: 'home'}">MyBNB</router-link>
 
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <router-link class="nav-link" :to="{name: 'Basket'}">
                         Basket
-                        <span v-if="itemsInBasket" class="badge badge-secondary">{{ itemsInBasket }}</span>
+                        <span v-if="itemsInBasket" class="badge bg-secondary">{{ itemsInBasket }}</span>
                     </router-link>
 
                 </li>
@@ -22,6 +22,11 @@
                     </router-link>
                 </li>
                 <li class="nav-item" v-if="isLoggedIn">
+                    <router-link :to="{name: 'my_account'}" class="nav-link">
+                        My Account
+                    </router-link>
+                </li>
+                <li class="nav-item" v-if="isLoggedIn">
                     <a class="nav-link" @click.prevent="logout">
                         Logout
                     </a>
@@ -30,7 +35,7 @@
 
             </ul>
         </nav>
-        <div class="container m-4 p-4">
+        <div class="container mx-auto p-4 d-flex justify-content-center ">
             <router-view/>
         </div>
 
@@ -66,3 +71,6 @@ export default {
     }
 }
 </script>
+<style scoped>
+
+</style>

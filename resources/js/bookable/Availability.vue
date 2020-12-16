@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white p-2 border mt-1">
+    <div class="bg-white p-4 border mt-1">
         <h6 class="text-secondary font-weight-bolder">
             Check Availability
             <transition>
@@ -8,7 +8,7 @@
             </transition>
         </h6>
 
-        <div class="form-row">
+        <div class="row">
             <div class="from-group col-md-6">
                 <label for="from">From</label>
                 <input type="date" name="from" id="from"

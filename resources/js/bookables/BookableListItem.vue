@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-3 d-flex align-items-stretch">
+    <div class="col-lg-3 col-md-4 col-sm-6 d-flex">
         <div class="card mt-3 w-100">
 
             <div class="card-text p-4">

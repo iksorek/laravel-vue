@@ -1,7 +1,7 @@
 <template>
 
     <div v-if="loading">Data is loading...</div>
-    <div class="row d-flex justify-content-center" v-else>
+    <div class="row d-flex justify-content-space" v-else>
         <BookableListItem
             v-for="bookable in bookables"
             :key="bookables.id"

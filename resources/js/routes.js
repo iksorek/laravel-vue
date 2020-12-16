@@ -6,6 +6,7 @@ import Review from "./review/Review";
 import Basket from "./basket/Basket";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
+import MyAccount from "./account/MyAccount";
 
 
 
@@ -40,6 +41,12 @@ const routes = [
         path: "/auth/register",
         component: Register,
         name: 'Register',
+    },
+
+    {
+        path: "/my-account",
+        component: MyAccount,
+        name: 'my_account',
     },
 
 ];
