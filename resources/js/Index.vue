@@ -1,12 +1,34 @@
 <template>
     <div>
-        <nav class="navbar bg-light border-bottom navbar-light">
+        <nav class="navbar navbar-expand-lg bg-light border-bottom navbar-light">
             <router-link class="navbar-brand mr-auto" :to="{name: 'home'}">MyBNB</router-link>
-            <router-link class="btn nav-button" :to="{name: 'Basket'}">
-                Basket
-                <span v-if="itemsInBasket" class="badge badge-secondary">{{ itemsInBasket }}</span>
-            </router-link>
 
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <router-link class="nav-link" :to="{name: 'Basket'}">
+                        Basket
+                        <span v-if="itemsInBasket" class="badge badge-secondary">{{ itemsInBasket }}</span>
+                    </router-link>
+
+                </li>
+                <li class="nav-item" v-if="!isLoggedIn">
+                    <router-link :to="{name: 'Register'}" class="nav-link">
+                        Register
+                    </router-link>
+                </li>
+                <li class="nav-item" v-if="!isLoggedIn">
+                    <router-link :to="{name: 'Login'}" class="nav-link">
+                        Sign in
+                    </router-link>
+                </li>
+                <li class="nav-item" v-if="isLoggedIn">
+                    <a class="nav-link" @click.prevent="logout">
+                        Logout
+                    </a>
+                </li>
+
+
+            </ul>
         </nav>
         <div class="container m-4 p-4">
             <router-view/>
@@ -26,10 +48,21 @@ export default {
 
         ...mapState({
             lastSearchComputed: "lastSearch",
+            isLoggedIn: "isLoggedIn",
         }),
         ...mapGetters({
             itemsInBasket: 'itemsInBasket',
         }),
+    },
+    methods: {
+        async logout() {
+            try {
+                axios.get("/logout");
+                this.$store.dispatch("logOut");
+            } catch (err) {
+                this.$store.dispatch("logOut");
+            }
+        }
     }
 }
 </script>

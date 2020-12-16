@@ -31,7 +31,7 @@
             <hr>
             <span class="text-nowrap">
                 No account?
-                <router-link :to="{name: 'home'}" class="font-weight-bold">Register</router-link>
+                <router-link :to="{name: 'Register'}" class="font-weight-bold">Register</router-link>
             </span>
             <span class="text-nowrap">
                 Forgotten password?
