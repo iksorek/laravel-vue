@@ -18,14 +18,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory()->count(10)->create();
-        Bookable::factory()->count(20)->create();
-        Address::factory()->count(20)->create();
-        Booking::factory()->count(80)->create();
+        User::factory()->count(50)->create();
+
+        Bookable::factory()->count(100)->create();
+        Address::factory()->count(100)->create();
+        Booking::factory()->count(200)->create();
         Bookable::all()->each(function (Bookable $bookable) {
             $reviews = Review::factory()->count(rand(5, 30))->make();
             $bookable->reviews()->saveMany($reviews);
         });
+        User::all()->each(function (User $user) {
+            $bookings = Booking::factory()->count(5)->make();
+            $user->bookings()->saveMany($bookings);
+        }
 
+        );
     }
 }

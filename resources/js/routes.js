@@ -7,8 +7,9 @@ import Basket from "./basket/Basket";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import MyAccount from "./account/MyAccount";
-
-
+import myProfile from "./account/myProfile";
+import myBookings from "./account/myBookings";
+import LeaveReview from "./account/LeaveReview";
 
 
 const routes = [
@@ -47,6 +48,23 @@ const routes = [
         path: "/my-account",
         component: MyAccount,
         name: 'my_account',
+        children: [
+            {
+                path: '/',
+                name: 'myProfile',
+                component: myProfile,
+            },
+            {
+                path: "/my-bookings",
+                name: 'myBookings',
+                component: myBookings,
+            },
+            {
+                path: "/leave-review",
+                name: 'LeaveReview',
+                component: LeaveReview,
+            },
+        ]
     },
 
 ];

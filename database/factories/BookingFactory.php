@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Address;
 use App\Models\Bookable;
 use App\Models\Booking;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -33,7 +34,7 @@ class BookingFactory extends Factory
             'price' => random_int(200, 5000),
             'bookable_id' => Bookable::all()->random()->id,
             'address_id' => Address::all()->random()->id,
-
+            'user_id' => User::all()->random()->id,
         ];
     }
 }

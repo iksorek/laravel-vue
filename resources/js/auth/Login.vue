@@ -24,9 +24,11 @@
                     <v-errors :errors="errorFor('password')"></v-errors>
 
                 </div>
-                <button type="submit" :disabled="loading" @click.prevent="login"
-                        class="btn-outline-primary btn btn-block">Login
-                </button>
+                <div class="d-grid mt-3">
+                    <button type="submit" :disabled="loading" @click.prevent="login"
+                            class="btn-outline-primary btn">Login
+                    </button>
+                </div>
             </form>
             <hr>
             <span class="text-nowrap">

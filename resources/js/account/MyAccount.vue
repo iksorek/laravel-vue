@@ -2,14 +2,15 @@
     <div v-if="isLoggedIn">
         <div class="row">
             <div class="col-md-3">
-                My Account menu<br>
-                My Account menu<br>
-                My Account menu<br>
-                My Account menu<br>
-                My Account menu
+                <div class="flex-column">
+                    <router-link :to="{name: 'myProfile'}" class="nav-link">Profile</router-link>
+                    <router-link :to="{name: 'myBookings'}" class="nav-link">My Bookings</router-link>
+                    <router-link :to="{name: 'LeaveReview'}" class="nav-link">Leave a review</router-link>
+
+                </div>
             </div>
             <div class="col-md-9">
-                Srodek
+                <router-view/>
             </div>
 
         </div>

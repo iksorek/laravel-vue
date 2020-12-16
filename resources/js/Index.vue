@@ -22,7 +22,7 @@
                     </router-link>
                 </li>
                 <li class="nav-item" v-if="isLoggedIn">
-                    <router-link :to="{name: 'my_account'}" class="nav-link">
+                    <router-link :to="{name: 'myProfile'}" class="nav-link">
                         My Account
                     </router-link>
                 </li>
@@ -35,7 +35,7 @@
 
             </ul>
         </nav>
-        <div class="container mx-auto p-4 d-flex justify-content-center ">
+        <div class="container mx-auto p-4">
             <router-view/>
         </div>
 
