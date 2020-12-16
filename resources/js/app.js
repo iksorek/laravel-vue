@@ -21,6 +21,16 @@ Vue.component('success', Success);
 Vue.component('submit-button', SubmitButton);
 
 const store = new Vuex.Store(storeDefinition);
+
+window.axios.interceptors.response.use(
+    response => response,
+    error => {
+        if (401 === error.response.status) {
+            store.dispatch("logOut");
+        }
+        return Promise.reject(error);
+    }
+);
 ///////////////////INITIALIZATION////////////////////
 const app = new Vue({
     el: '#app',
