@@ -30,20 +30,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/myReviewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/myReviewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/account/LeaveReview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/account/LeaveReview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/account/MyAccount.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/account/MyAccount.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/auth/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bookables/Bookables.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookables/Bookables.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/shared/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/shared/utils/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,21 +249,7 @@
       <workItem from="1607940105059" duration="3268000" />
       <workItem from="1607986137157" duration="1892000" />
       <workItem from="1608073742268" duration="21713000" />
-      <workItem from="1608224435920" duration="12379000" />
-    </task>
-    <task id="LOCAL-00003" summary="REVIEW model, factory and API created">
-      <created>1605370591043</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1605370591043</updated>
-    </task>
-    <task id="LOCAL-00004" summary="REVIEW model cd">
-      <created>1605480909662</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1605480909662</updated>
+      <workItem from="1608224435920" duration="12578000" />
     </task>
     <task id="LOCAL-00005" summary="Review Code in progress">
       <created>1605707248034</created>
@@ -617,7 +591,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608224547709</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="ADD List of unrated reviews">
+      <created>1608250011518</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1608250011518</updated>
+    </task>
+    <task id="LOCAL-00054" summary="ADD List of unrated reviews">
+      <created>1608250070165</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1608250070165</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -665,7 +653,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Add few animations and localstorage for searched dates" />
     <MESSAGE value="Half-way to get basket done" />
     <MESSAGE value="ADD: Adding adn removing to/from basket in VUEX state and local storage" />
     <MESSAGE value="ADD: Adding adn removing to/from basket in VUEX state and local storage(PROD)" />
@@ -690,7 +677,8 @@
     <MESSAGE value="ADD registration component and logic&#10;&#10;Signed-off-by: iksor &lt;iksorek@gmail.com&gt;" />
     <MESSAGE value="Update BOOTSTRAP and POPPER.JS&#10;Fix responsiveness" />
     <MESSAGE value="Test one" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test one" />
+    <MESSAGE value="ADD List of unrated reviews" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD List of unrated reviews" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

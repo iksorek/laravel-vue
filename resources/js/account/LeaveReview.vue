@@ -9,6 +9,9 @@
                     :to="{name: 'Review', params: {id: stay.review_key}}">LEAVE A REVIEW</router-link></span>
             </div>
         </div>
+        <div v-else>
+            <h3 class="text-center">You have no unrated bookings! Book something new!</h3>
+        </div>
     </div>
 </template>
 
