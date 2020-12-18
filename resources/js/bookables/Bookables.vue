@@ -25,15 +25,6 @@ export default {
         }
     },
     created() {
-        //////////////////PROMISE FOR REFERENCE
-        // const p = new Promise((resolve, reject) => {
-        //     console.log(resolve);
-        //     console.log(reject);
-        //     setTimeout(()=> resolve("Hello"), 3000);
-        // }).then(result =>console.log(`Success ${result}`))
-        // .catch(result => console.log(`Error ${result}`));
-        // console.log(p);
-        //
 
         this.loading = true;
 

@@ -48,7 +48,7 @@
 <script>
 import validationErrors from "../shared/mixins/validationErrors";
 
-import {logIn, logOut, isLoggedIn} from "../shared/utils/auth";
+import {logIn} from "../shared/utils/auth";
 
 export default {
     name: "Login",
@@ -79,7 +79,6 @@ export default {
                 this.errors = error.response && error.response.data.errors;
                 this.loading = false;
             }
-            //await axios.get('/user');
             this.loading = false;
 
 

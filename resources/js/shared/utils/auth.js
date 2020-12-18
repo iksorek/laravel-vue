@@ -7,5 +7,14 @@ export function logIn() {
 }
 
 export function logOut() {
-    localStorage.setItem("isLoggedIn", 'false');
+
+
+    axios.get('/logout2').then(response => {
+            if (response.status === 200)
+                localStorage.setItem("isLoggedIn", 'false');
+        }
+    );
+    this.$router.go(0);
+
 }
+

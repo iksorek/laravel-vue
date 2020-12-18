@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
+use http\Cookie;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
 {
@@ -49,9 +50,12 @@ class LoginController extends Controller
 
     protected function loggedOut(Request $request)
     {
+        session_destroy();
         if ($request->isXmlHttpRequest()) {
             return response(null, 204);
         }
+
     }
+
 
 }

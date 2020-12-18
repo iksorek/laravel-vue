@@ -29,23 +29,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5d4ca72-6d43-4245-beec-337faeb35d83" name="Default Changelist" comment="Review Code in progress">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/myReviewsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/account/LeaveReview.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/account/myBookings.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/account/myProfile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BookingFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BookingFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_10_202927_create_bookings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_10_202927_create_bookings_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/myReviewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/myReviewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/account/LeaveReview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/account/LeaveReview.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/account/MyAccount.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/account/MyAccount.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/auth/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bookables/Bookables.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bookables/Bookables.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/shared/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/shared/utils/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,20 +261,7 @@
       <workItem from="1607940105059" duration="3268000" />
       <workItem from="1607986137157" duration="1892000" />
       <workItem from="1608073742268" duration="21713000" />
-    </task>
-    <task id="LOCAL-00001" summary="availability in progress">
-      <created>1605049826420</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1605049826420</updated>
-    </task>
-    <task id="LOCAL-00002" summary="availability in progress">
-      <created>1605050012767</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1605050012767</updated>
+      <workItem from="1608224435920" duration="12379000" />
     </task>
     <task id="LOCAL-00003" summary="REVIEW model, factory and API created">
       <created>1605370591043</created>
@@ -618,7 +603,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608129711681</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Test one">
+      <created>1608224481504</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1608224481504</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Test one">
+      <created>1608224547709</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1608224547709</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <option name="createChangelist" value="false" />
     <servers />
   </component>
@@ -666,7 +665,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Minor fixes" />
     <MESSAGE value="Add few animations and localstorage for searched dates" />
     <MESSAGE value="Half-way to get basket done" />
     <MESSAGE value="ADD: Adding adn removing to/from basket in VUEX state and local storage" />
@@ -691,7 +689,8 @@
     <MESSAGE value="ADD registration component and logic" />
     <MESSAGE value="ADD registration component and logic&#10;&#10;Signed-off-by: iksor &lt;iksorek@gmail.com&gt;" />
     <MESSAGE value="Update BOOTSTRAP and POPPER.JS&#10;Fix responsiveness" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update BOOTSTRAP and POPPER.JS&#10;Fix responsiveness" />
+    <MESSAGE value="Test one" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test one" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -701,6 +700,11 @@
           <url>file://$PROJECT_DIR$/resources/js/bookable/Availability.vue</url>
           <line>116</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/account/MyAccount.vue</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

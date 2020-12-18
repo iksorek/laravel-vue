@@ -23,10 +23,7 @@ class DatabaseSeeder extends Seeder
         Bookable::factory()->count(100)->create();
         Address::factory()->count(100)->create();
         Booking::factory()->count(200)->create();
-        Bookable::all()->each(function (Bookable $bookable) {
-            $reviews = Review::factory()->count(rand(5, 30))->make();
-            $bookable->reviews()->saveMany($reviews);
-        });
+
         User::all()->each(function (User $user) {
             $bookings = Booking::factory()->count(5)->make();
             $user->bookings()->saveMany($bookings);

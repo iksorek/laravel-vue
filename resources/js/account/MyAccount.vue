@@ -41,5 +41,18 @@ export default {
 </script>
 
 <style scoped>
+.nav-link {
+    text-transform: uppercase;
+    color: #1a202c;
+    transition: .2s;
+
+}
+
+.nav-link:hover {
+    color: #2d3748;
+    text-shadow: 2px 2px 10px black;
+    margin-left: 3px;
+    font-weight: bold;
+}
 
 </style>

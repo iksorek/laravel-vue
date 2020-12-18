@@ -80,6 +80,7 @@ export default {
             commit("setUser", {});
             commit("setLoggedIn", false);
             logOut();
+
         }
 
     },

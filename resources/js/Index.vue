@@ -1,7 +1,9 @@
 <template>
     <div>
         <nav class="navbar navbar-expand-lg px-5 bg-light border-bottom navbar-light d-flex justify-content-between">
-            <router-link class="navbar-brand" :to="{name: 'home'}">MyBNB</router-link>
+            <router-link class="navbar-brand" :to="{name: 'home'}">MyBNB<span class="text-muted"
+                                                                              v-if="isLoggedIn"> ({{ this.$store.state.user.name }})</span>
+            </router-link>
 
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -62,8 +64,9 @@ export default {
     methods: {
         async logout() {
             try {
-                axios.get("/logout");
-                this.$store.dispatch("logOut");
+                let tryMe = await (axios.get("/logout2")).data;
+                this.$store.dispatch('logOut');
+
             } catch (err) {
                 this.$store.dispatch("logOut");
             }
